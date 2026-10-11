@@ -1,0 +1,44 @@
+[
+  {
+    "request_id": "REQ-1001",
+    "baseline_business_envelope_bytes": 5193,
+    "compact_business_envelope_bytes": 3550,
+    "reduction_percent": 31.6,
+    "live_calls": 0
+  },
+  {
+    "request_id": "REQ-1002",
+    "baseline_business_envelope_bytes": 7332,
+    "compact_business_envelope_bytes": 5190,
+    "reduction_percent": 29.2,
+    "live_calls": 0
+  },
+  {
+    "request_id": "REQ-1003",
+    "baseline_business_envelope_bytes": 5691,
+    "compact_business_envelope_bytes": 4017,
+    "reduction_percent": 29.4,
+    "live_calls": 0
+  },
+  {
+    "request_id": "REQ-1005",
+    "baseline_business_envelope_bytes": 5928,
+    "compact_business_envelope_bytes": 4706,
+    "reduction_percent": 20.6,
+    "live_calls": 0
+  },
+  {
+    "request_id": "REQ-1006",
+    "baseline_business_envelope_bytes": 7299,
+    "compact_business_envelope_bytes": 5579,
+    "reduction_percent": 23.6,
+    "live_calls": 0
+  },
+  {
+    "request_id": "REQ-1009",
+    "baseline_business_envelope_bytes": 5754,
+    "compact_business_envelope_bytes": 4599,
+    "reduction_percent": 20.1,
+    "live_calls": 0
+  }
+]

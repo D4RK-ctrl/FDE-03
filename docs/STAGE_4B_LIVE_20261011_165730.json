@@ -1,0 +1,173 @@
+{
+  "stage": "4B",
+  "architecture": "staged",
+  "model": "openai/gpt-oss-120b",
+  "started_at_ist": "2026-10-11T16:57:30.295697+05:30",
+  "configuration": {
+    "maximum_http_attempts": 4,
+    "retries_enabled": false,
+    "retry_disable_method": "process_only_negative_backoff_ceiling",
+    "model_call_interval_seconds": 60,
+    "maximum_pacing_seconds": 180
+  },
+  "cases": [
+    {
+      "request_id": "REQ-1001",
+      "success": true,
+      "model": "openai/gpt-oss-120b",
+      "schema_valid": true,
+      "recommendation_category": "Human review required",
+      "required_approvals": [
+        "Manager"
+      ],
+      "risk_flags": [
+        "existing_tool_overlap"
+      ],
+      "tool_calls": 5,
+      "llm_calls": 2,
+      "latency_ms": 63147.5,
+      "sanitized_error": null,
+      "analyst_executed": true,
+      "analyst_structured_output": "valid",
+      "analyst_safety_validation": "accepted",
+      "reviewer_executed": true,
+      "reviewer_structured_output": "valid",
+      "reviewer_safety_validation": "accepted",
+      "fallback_used": false,
+      "pacing_wait_seconds": 55.234,
+      "active_latency_ms": 7913.5,
+      "diagnostics": [
+        {
+          "groq_diagnostic": {
+            "attempt": 1,
+            "http_status": 200,
+            "input_bytes": 6258,
+            "completion_tokens_limit": 1200,
+            "rate_limits": {
+              "limit_requests": 1000,
+              "remaining_requests": 999,
+              "limit_tokens": 8000,
+              "remaining_tokens": 6311,
+              "reset_requests": "1m26.4s",
+              "reset_tokens": "12.667s",
+              "exhausted_header_windows": []
+            }
+          }
+        },
+        {
+          "groq_diagnostic": {
+            "attempt": 1,
+            "http_status": 200,
+            "input_bytes": 7792,
+            "completion_tokens_limit": 1200,
+            "rate_limits": {
+              "limit_requests": 1000,
+              "remaining_requests": 998,
+              "limit_tokens": 8000,
+              "remaining_tokens": 5987,
+              "reset_requests": "2m52.8s",
+              "reset_tokens": "15.097s",
+              "exhausted_header_windows": []
+            }
+          }
+        }
+      ],
+      "mandatory_approvals_preserved": true,
+      "policy_risk_flags_preserved": true,
+      "missing_information_preserved": true,
+      "blockers_and_unresolved_preserved": true,
+      "evidence_grounded": true,
+      "human_review_required": true
+    },
+    {
+      "request_id": "REQ-1002",
+      "success": true,
+      "model": "openai/gpt-oss-120b",
+      "schema_valid": true,
+      "recommendation_category": "Required reviews before purchase",
+      "required_approvals": [
+        "Department Head",
+        "Finance",
+        "Procurement",
+        "Security",
+        "Legal"
+      ],
+      "risk_flags": [
+        "existing_tool_overlap",
+        "security_review_required",
+        "conflicting_vendor_evidence",
+        "legal_review_required"
+      ],
+      "tool_calls": 5,
+      "llm_calls": 2,
+      "latency_ms": 120851.4,
+      "sanitized_error": null,
+      "analyst_executed": true,
+      "analyst_structured_output": "valid",
+      "analyst_safety_validation": "accepted",
+      "reviewer_executed": true,
+      "reviewer_structured_output": "valid",
+      "reviewer_safety_validation": "accepted",
+      "fallback_used": false,
+      "pacing_wait_seconds": 109.0,
+      "active_latency_ms": 11851.4,
+      "diagnostics": [
+        {
+          "groq_diagnostic": {
+            "attempt": 1,
+            "http_status": 200,
+            "input_bytes": 8040,
+            "completion_tokens_limit": 1200,
+            "rate_limits": {
+              "limit_requests": 1000,
+              "remaining_requests": 997,
+              "limit_tokens": 8000,
+              "remaining_tokens": 5938,
+              "reset_requests": "4m19.2s",
+              "reset_tokens": "15.464s",
+              "exhausted_header_windows": []
+            }
+          }
+        },
+        {
+          "groq_diagnostic": {
+            "attempt": 1,
+            "http_status": 200,
+            "input_bytes": 10131,
+            "completion_tokens_limit": 1200,
+            "rate_limits": {
+              "limit_requests": 1000,
+              "remaining_requests": 996,
+              "limit_tokens": 8000,
+              "remaining_tokens": 5533,
+              "reset_requests": "5m45.6s",
+              "reset_tokens": "18.502s",
+              "exhausted_header_windows": []
+            }
+          }
+        }
+      ],
+      "mandatory_approvals_preserved": true,
+      "policy_risk_flags_preserved": true,
+      "missing_information_preserved": true,
+      "blockers_and_unresolved_preserved": true,
+      "evidence_grounded": true,
+      "human_review_required": true
+    }
+  ],
+  "execution_status": "completed",
+  "summary": {
+    "cases_executed": 2,
+    "accepted_ai": 2,
+    "fallbacks": 0,
+    "llm_http_attempts": 4,
+    "tool_calls": 10,
+    "total_pipeline_latency_ms": 183998.9,
+    "total_active_latency_ms": 19764.9,
+    "pacing_wait_seconds": 164.234,
+    "wall_time_seconds": 186.928
+  },
+  "protected_files_unchanged": true,
+  "protected_file_count": 60,
+  "completed_at_ist": "2026-10-11T17:00:37.408125+05:30"
+}
