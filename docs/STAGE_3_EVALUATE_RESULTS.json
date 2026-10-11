@@ -1,0 +1,138 @@
+[
+  {
+    "request_id": "REQ-1001",
+    "success": true,
+    "model": "openai/gpt-oss-120b",
+    "schema_valid": true,
+    "recommendation_category": "Human review required",
+    "required_approvals": [
+      "Manager"
+    ],
+    "risk_flags": [
+      "existing_tool_overlap"
+    ],
+    "tool_calls": 5,
+    "llm_calls": 1,
+    "latency_ms": 1901.8,
+    "sanitized_error": null
+  },
+  {
+    "request_id": "REQ-1002",
+    "success": false,
+    "model": "openai/gpt-oss-120b",
+    "schema_valid": true,
+    "recommendation_category": "AI analysis unavailable \u2014 human review required",
+    "required_approvals": [
+      "Department Head",
+      "Finance",
+      "Procurement",
+      "Security",
+      "Legal"
+    ],
+    "risk_flags": [
+      "existing_tool_overlap",
+      "security_review_required",
+      "conflicting_vendor_evidence",
+      "legal_review_required",
+      "ai_analysis_unavailable",
+      "unsafe_model_output"
+    ],
+    "tool_calls": 5,
+    "llm_calls": 1,
+    "latency_ms": 2162.1,
+    "sanitized_error": "unsafe_model_output"
+  },
+  {
+    "request_id": "REQ-1003",
+    "success": true,
+    "model": "openai/gpt-oss-120b",
+    "schema_valid": true,
+    "recommendation_category": "Required reviews before purchase",
+    "required_approvals": [
+      "Department Head",
+      "Finance",
+      "Procurement",
+      "Security"
+    ],
+    "risk_flags": [
+      "existing_tool_overlap",
+      "security_review_required"
+    ],
+    "tool_calls": 5,
+    "llm_calls": 1,
+    "latency_ms": 1744.9,
+    "sanitized_error": null
+  },
+  {
+    "request_id": "REQ-1005",
+    "success": false,
+    "model": "openai/gpt-oss-120b",
+    "schema_valid": true,
+    "recommendation_category": "AI analysis unavailable \u2014 human review required",
+    "required_approvals": [
+      "Department Head",
+      "Finance",
+      "Procurement",
+      "Security",
+      "Privacy",
+      "Legal"
+    ],
+    "risk_flags": [
+      "budget_insufficient",
+      "security_review_required",
+      "privacy_review_required",
+      "conflicting_vendor_evidence",
+      "legal_review_required",
+      "ai_analysis_unavailable",
+      "rate_limited"
+    ],
+    "tool_calls": 5,
+    "llm_calls": 1,
+    "latency_ms": 583.6,
+    "sanitized_error": "rate_limited"
+  },
+  {
+    "request_id": "REQ-1006",
+    "success": false,
+    "model": "openai/gpt-oss-120b",
+    "schema_valid": true,
+    "recommendation_category": "AI analysis unavailable \u2014 human review required",
+    "required_approvals": [],
+    "risk_flags": [
+      "missing_information",
+      "existing_tool_overlap",
+      "prompt_injection_detected",
+      "ai_analysis_unavailable",
+      "rate_limited"
+    ],
+    "tool_calls": 5,
+    "llm_calls": 1,
+    "latency_ms": 430.7,
+    "sanitized_error": "rate_limited"
+  },
+  {
+    "request_id": "REQ-1009",
+    "success": false,
+    "model": "openai/gpt-oss-120b",
+    "schema_valid": true,
+    "recommendation_category": "AI analysis unavailable \u2014 human review required",
+    "required_approvals": [
+      "Department Head",
+      "Finance",
+      "Procurement",
+      "Security",
+      "Legal"
+    ],
+    "risk_flags": [
+      "security_review_required",
+      "vendor_risk_unavailable",
+      "legal_review_required",
+      "ai_analysis_unavailable",
+      "rate_limited"
+    ],
+    "tool_calls": 5,
+    "llm_calls": 1,
+    "latency_ms": 533.1,
+    "sanitized_error": "rate_limited"
+  }
+]

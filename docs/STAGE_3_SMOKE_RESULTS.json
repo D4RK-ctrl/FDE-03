@@ -1,0 +1,19 @@
+[
+  {
+    "request_id": "REQ-1001",
+    "success": true,
+    "model": "openai/gpt-oss-120b",
+    "schema_valid": true,
+    "recommendation_category": "Human review required",
+    "required_approvals": [
+      "Manager"
+    ],
+    "risk_flags": [
+      "existing_tool_overlap"
+    ],
+    "tool_calls": 5,
+    "llm_calls": 1,
+    "latency_ms": 2414.5,
+    "sanitized_error": null
+  }
+]
